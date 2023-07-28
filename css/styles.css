@@ -1,0 +1,31 @@
+.grid-contenedor{
+
+    display: grid;
+    margin: 0 15% 0 15%;
+    grid-template-rows: 800% 800%;
+    grid-template-areas: 'uno uno dos'
+                        'uno uno tres';
+
+}
+    
+
+.grid-contenedor .item{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    gap: left 10px;
+
+}
+
+.grid-contenedor .item_1{
+    background-color: rgb(16, 151, 255);
+}
+
+.grid-contenedor .item_1{
+    grid-area: uno;
+}
+.grid-contenedor .item_2{
+    grid-area: dos;
+}
+.grid-contenedor .item_3{
+    grid-area: tres;
+}
